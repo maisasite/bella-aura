@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bella Aura Cosméticos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="logo">
+      Bella Aura
+      <span>cosméticos</span>
+    </div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-icons">
+      <span>♡</span>
+      <span class="cart-icon">🛍️ <b id="cart-count">0</b></span>
+    </div>
+  </header>
+
+
+  <!-- BANNER PRINCIPAL -->
+  <section class="hero" id="inicio">
+
+    <div class="hero-text">
+      <p class="small-title">BELEZA QUE INSPIRA</p>
+
+      <h1>
+        Realce a beleza<br>
+        que já existe <em>em você.</em>
+      </h1>
+
+      <p>
+        Descubra produtos selecionados para transformar
+        sua rotina de beleza e valorizar sua essência.
+      </p>
+
+      <a href="#produtos" class="btn">
+        Conheça nossos produtos
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"
+        alt="Cosméticos Bella Aura">
+    </div>
+
+  </section>
+
+
+  <!-- BENEFÍCIOS -->
+  <section class="benefits">
+
+    <div>
+      <span>🚚</span>
+      <h3>Entrega nacional</h3>
+      <p>Enviamos para todo o Brasil</p>
+    </div>
+
+    <div>
+      <span>🔒</span>
+      <h3>Compra segura</h3>
+      <p>Seus dados sempre protegidos</p>
+    </div>
+
+    <div>
+      <span>💳</span>
+      <h3>Pagamento facilitado</h3>
+      <p>Facilidade para suas compras</p>
+    </div>
+
+    <div>
+      <span>💬</span>
+      <h3>Atendimento especial</h3>
+      <p>Estamos aqui para você</p>
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORIAS -->
+  <section class="section" id="categorias">
+
+    <p class="section-subtitle">DESCUBRA</p>
+    <h2>Encontre seus favoritos</h2>
+
+    <div class="categories">
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=500&q=80" alt="Maquiagem">
+        <h3>Maquiagem</h3>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Skincare">
+        <h3>Skincare</h3>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80" alt="Perfumes">
+        <h3>Perfumes</h3>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Cabelos">
+        <h3>Cabelos</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUTOS -->
+  <section class="section products-section" id="produtos">
+
+    <p class="section-subtitle">SELECIONADOS PARA VOCÊ</p>
+    <h2>Os mais amados</h2>
+
+    <div class="products">
+
+      <div class="product-card">
+        <div class="product-image">
+          <span class="badge">Mais vendido</span>
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Batom Velvet Rose">
+        </div>
+
+        <div class="stars">★★★★★</div>
+        <h3>Batom Velvet Rose</h3>
+        <p class="product-description">Acabamento aveludado e longa duração.</p>
+        <strong>R$ 39,90</strong>
+
+        <button onclick="addToCart('Batom Velvet Rose')">
+          Adicionar ao carrinho
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <span class="badge">Favorito</span>
+          <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?auto=format&fit=crop&w=500&q=80" alt="Base Glow Skin">
+        </div>
+
+        <div class="stars">★★★★★</div>
+        <h3>Base Glow Skin</h3>
+        <p class="product-description">Cobertura natural com efeito luminoso.</p>
+        <strong>R$ 69,90</strong>
+
+        <button onclick="addToCart('Base Glow Skin')">
+          Adicionar ao carrinho
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&fit=crop&w=500&q=80" alt="Paleta Nude Dreams">
+        </div>
+
+        <div class="stars">★★★★★</div>
+        <h3>Paleta Nude Dreams</h3>
+        <p class="product-description">Tons elegantes para todas as ocasiões.</p>
+        <strong>R$ 89,90</strong>
+
+        <button onclick="addToCart('Paleta Nude Dreams')">
+          Adicionar ao carrinho
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <span class="badge">Novidade</span>
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Sérum Facial Glow">
+        </div>
+
+        <div class="stars">★★★★★</div>
+        <h3>Sérum Facial Glow</h3>
+        <p class="product-description">Hidratação e luminosidade para sua pele.</p>
+        <strong>R$ 59,90</strong>
+
+        <button onclick="addToCart('Sérum Facial Glow')">
+          Adicionar ao carrinho
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80"
+        alt="Bella Aura">
+    </div>
+
+    <div class="about-text">
+      <p class="section-subtitle">NOSSA ESSÊNCIA</p>
+
+      <h2>Beleza para ser sentida.</h2>
+
+      <p>
+        A Bella Aura nasceu com o propósito de tornar a beleza
+        mais acessível e especial.
+      </p>
+
+      <p>
+        Selecionamos produtos que valorizam diferentes estilos
+        e ajudam cada pessoa a expressar sua própria essência.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- AVALIAÇÕES -->
+  <section class="section reviews">
+
+    <p class="section-subtitle">AVALIAÇÕES DEMONSTRATIVAS</p>
+    <h2>Quem compra, ama</h2>
+
+    <div class="review-grid">
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Produtos maravilhosos e uma experiência de compra incrível!"
+        </p>
+        <strong>— Mariana S.</strong>
+      </div>
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Amei a qualidade dos produtos. Com certeza compraria novamente."
+        </p>
+        <strong>— Ana C.</strong>
+      </div>
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "O site é lindo e encontrei tudo com muita facilidade."
+        </p>
+        <strong>— Júlia M.</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="contato">
+
+    <p>FIQUE POR DENTRO</p>
+
+    <h2>Novidades que combinam com você.</h2>
+
+    <p>
+      Cadastre seu e-mail e receba novidades e ofertas da Bella Aura.
+    </p>
+
+    <form onsubmit="subscribe(event)">
+      <input
+        type="email"
+        placeholder="Digite seu melhor e-mail"
+        required>
+
+      <button type="submit">
+        Quero receber
+      </button>
+    </form>
+
+    <p id="newsletter-message"></p>
+
+  </section>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <div>
+      <h2>Bella Aura</h2>
+      <p>Sua beleza, sua essência.</p>
+    </div>
+
+    <div>
+      <h3>Navegação</h3>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre nós</a>
+    </div>
+
+    <div>
+      <h3>Atendimento</h3>
+      <p>Segunda a sexta</p>
+      <p>9h às 18h</p>
+    </div>
+
+    <div>
+      <h3>Redes sociais</h3>
+      <p>Instagram</p>
+      <p>TikTok</p>
+      <p>Facebook</p>
+    </div>
+
+  </footer>
+
+  <div class="demo-warning">
+    Projeto demonstrativo de portfólio — Bella Aura é uma empresa fictícia.
+  </div>
+
+
+  <!-- WHATSAPP DEMONSTRATIVO -->
+  <button class="whatsapp" onclick="demoWhatsapp()" aria-label="WhatsApp">
+    💬
+  </button>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
